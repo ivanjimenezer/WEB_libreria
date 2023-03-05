@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+
+
+<body>
+        <form method="post">
+        <aside id="descripcion">
+            Comprar: Fuego y sangre <br>
+            Enviar a: <br>
+            PRECIO = $ 500 MXN <br><br>
+        </aside>
+        <div id="pago">
+            <aside>¿COMO DESEA REALIZAR SU PAGO?</aside>
+            <input type="radio" name="pago" value="2" required>TARJETA DE DEBITO<br>
+            <input type="radio" name="pago" value="3" required>TARJETA DE CREDITO <br>
+        </div>
+        <br>
+<div class="insertarmetodo">
+        <h2>Ingrese el metodo de pago</h2>
+        
+            <div>Numero de tarjeta</div>
+            <input type="text" name="Tarjeta" id="tarjetas" placeholder="" required><br>
+           
+            <div>Nombre en la tarjeta</div>
+            <input type="text" name="NombreTarjeta" id="nombrestarjeta" placeholder="" required><br>
+
+            <div>Vencimiento</div>
+            <input type="text" name="VencimientoTarjeta" id="vencimientotarjetas" placeholder="" required><br>      
+
+            <div>Codigo</div>
+            <input type="text" name="CodigoTarjeta" id="codigotarjatas" placeholder="" required><br>
+
+        </div>
+
+
+
+        <br>
+        <div id="envio">
+            <aside>¿COMO DESEA RECIBIR SU ENVIO?</aside>
+            <input type="radio" name="envio" value="1" required>DHL<br>
+            <input type="radio" name="envio" value="2" required>FEDEX<br>
+        </div>
+        <hr>
+        <input type="submit" value="Pagar" ><br>
+        <a href="carrito.html" target="contenido">Volver</a>
+        </form>
+
+</body>
+
+</html>
