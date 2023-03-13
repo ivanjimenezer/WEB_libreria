@@ -3,23 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-
+    <!-- Added Global Attribute: lang -->
+    <title lang="en">Linea de fuego</title>
+    <!-- Added Global Attribute: rel -->
+    <link rel="stylesheet" type="text/css" href="CSS/estilo_nave.css">
 </head>
-
-
 <body>
-  
-        <div class="galeria">
-
-                    <img src="imagenes\libros\Fuegoysangre.jpg" width="300" height="400">
-                    <h2>Fuego y sangre</h2>
-                    <a href="descripcion\libro\Fuego y sangre\fuegoysangre.html">Leer más</a>
-                    <span>Envío Gratis</span>
-                </div>
-           
-        
-
+	<div class="section"> 
+        <div class="novedades-header">
+            <h2>Novedades</h2>
+        </div>
+		<table class="novedades">
+			<tr>
+				<td>
+					<div class="book">
+						<img src="imagenes/libros/berserk_vol1.jpg">
+						<h3>Berserk Vol. 1</h3>
+						<p>Kentaro Miura</p>
+						<p class="type">Manga, Seinen</p> 
+						<p>Precio: $10.99</p>
+						<button>Comprar</button>
+					</div>
+				</td>
+				<td>
+					<div class="book">
+						<img src="imagenes/libros/howtowinfriend.jpg">
+						<h3>Como ganar amigos e influir sobre las personas</h3>
+						<p>Dale Carnegie</p> 
+                        <p class="type">Libro, Negocios</p>
+						<p>Precio: $9.99</p>
+						<button>Comprar</button>
+					</div>
+				</td>
+				<!-- Aquí se agregan más libros -->
+                <td>
+					<div class="book">
+						<img src="imagenes/libros/swampthingvol6.jpg">
+						<h3>Saga of the Swampthing Vol.6</h3>
+						<p>Alan Moore</p>
+                        <p class="type">Comic, Terror</p>
+						<p>Precio: $10.99</p>
+						<button>Comprar</button>
+					</div>
+				</td>        
+        <td>
+					<div class="book">
+						<img src="imagenes/libros/mouse_guard.jpg">
+						<h3>Mouse Guard: Fall 1152</h3>
+						<p>David Petersen</p>
+                        <p class="type">Comic, Aventura</p>
+						<p>Precio: $10.99</p>
+						<button>Comprar</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+    <div class="section">
+        <div class="masven-header">
+            <h2>Más vendidos</h2>
+        </div>
+        <table class="mas-ven">
+            <tr>
+                <td>
+                    <div class="book">
+                        <img src="imagenes/libros/elextranjero_albertcamu.jpg">
+                        <h3>El Extranjero</h3>
+                        <p>Albert Camus</p>
+                        <p>Libro, Filosofia</p>
+                        <p class="type">Precio: $12.99</p>
+                        <button>Comprar</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="book">
+                        <img src="imagenes/libros/retornodelrey.jpg">
+                        <h3>El Señor de los Anillos: El Retorno del Rey</h3>
+                        <p>J.R.R. Tolkien</p>
+                        <p class="type">Libro, Fantasia</p>
+                        <p>Precio: $8.99</p>
+                        <button>Comprar</button>
+                    </div>
+                </td>
+                <!-- Aquí se agregan más libros -->
+                <td>
+                    <div class="book">
+                        <img src="imagenes/libros/sandman.jpg">
+                        <h3>The Sandman: Preludios y Nocturnos</h3>
+                        <p>Neil Gaiman</p>
+                        <p>Precio: $10.99</p>
+                        <p class="type">Comic, Fantasia</p>
+                        <button class="buy-button">Comprar</button>
+                </td>
+                <td>
+                    <img src="imagenes/libros/lovecraft_vol1.jpg" alt="Book cover"/>
+                    <p class="title">Lovecraft Compendio de Historias Vol.1</p>
+                    <p class="author">H.P. Lovecraft</p>
+                    <p class="price"><del>$15</del> $10</p>
+                    <p class="type">Libro, Terror</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+                 
+            </tr>
+        </table>
+    </div>
+<div class="section">
+        <div class="discounts-header">
+            <h2>Descuentos</h2>
+        </div>
+        <table class="descuentos">
+            <tr>
+                <td>
+                    <img src="imagenes/libros/Fuegoysangre.jpg" alt="Book cover" class="book-img"/>
+                    <p class="title">Fuego y Sangre</p>
+                    <p class="author">George R. R. Martin</p>
+                    <p class="price"><del>$20</del> $15</p>
+                    <p class="type">Libro, Fantasia</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+                <td>
+                    <img src="book4.jpg" alt="Book cover" class="book-img"/>
+                    <p class="title">Libro 6</p>
+                    <p class="author">Autor 6</p>
+                    <p class="price"><del>$25</del> $20</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+                <td>
+                    <img src="book4.jpg" alt="Book cover" class="book-img"/>
+                    <p class="title">Libro 7</p>
+                    <p class="author">Autor 7</p>
+                    <p class="price"><del>$30</del> $25</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+                <td>
+                    <img src="book4.jpg" alt="Book cover" class="book-img"/>
+                    <p class="title">Libro 8</p>
+                    <p class="author">Autor 8</p>
+                    <p class="price"><del>$35</del> $30</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+                <td>
+                    <img src="book4.jpg" alt="Book cover" class="book-img"/>
+                    <p class="title">Libro 9</p>
+                    <p class="author">Autor 9</p>
+                    <p class="price"><del>$40</del> $35</p>
+                    <button class="buy-button">Comprar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+          <!-- Seccion Genero del mes -->
+          <div class="section"> 
+            <div class="genero-header">
+                <h3>Genero del mes</h3>
+                <h2>TERROR</h2>
+            </div>
+            <table class="genero">
+              <tr>
+                <td>
+                  <img src="imagen1.jpg" alt="Libro 1"/>
+                  <p>Título del libro 1</p>
+                  <p>Autor 1</p>
+                  <p>Precio: $10.00</p>
+                </td>
+                <td>
+                  <img src="imagen2.jpg" alt="Libro 2"/>
+                  <p>Título del libro 2</p>
+                  <p>Autor 2</p>
+                  <p>Precio: $12.50</p>
+                </td>
+                <td>
+                  <img src="imagen3.jpg" alt="Libro 3"/>
+                  <p>Título del libro 3</p>
+                  <p>Autor 3</p>
+                  <p>Precio: $8.75</p>
+                </td>
+                <td>
+                  <img src="imagen4.jpg" alt="Libro 4"/>
+                  <p>Título del libro 4</p>
+                  <p>Autor 4</p>
+                  <p>Precio: $9.99</p>
+                </td>
+                <td>
+                  <img src="imagen5.jpg" alt="Libro 5"/>
+                  <p>Título del libro 5</p>
+                  <p>Autor 5</p>
+                  <p>Precio: $15.00</p>
+                </td>
+              </tr>
+            </table>
+          </div>        
+        </div>
+        <div class="footer">
+            <h3>Linea de fuego</h3>
+            <p>Contacto: linea_de_fuego@gmail.com</p>
+        </div>
 </body>
-
-</html>
+</html>                        

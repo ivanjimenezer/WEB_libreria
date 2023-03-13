@@ -1,49 +1,204 @@
 /* Estilos para la tabla */
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-  }
-  th {
-    background-color: lightgray;
-  }
-  
-  /* Estilos para la barra de menú */
-  nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  .search-form {
-    display: flex;
-    align-items: center;
-  }
-  .search-form input[type="text"] {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-  }
-  .search-form button {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    margin-left: 10px;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px; /* reduced padding value */
+  text-align: center;
+}
+
+th {
+  background-color: #4a86e8;
+  color: white;
+  position: relative;
+}
+
+th:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4a86e8;
+  z-index: -1;
+}
+
+td img {
+  border: 1px solid #4a86e8;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+}
+
+td[data-category="clothing"] {
+  background-color: #f1c40f;
+}
+
+td[data-category="electronics"] {
+  background-color: #3498db;
+}
+
+td[data-category="food"] {
+  background-color: #2ecc71;
+}
+
+/* Estilos para la barra de menú */
+nav {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-form button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Estilos para la página principal */
+body {
+  background-color: #1a1a2e;
+  color: #ccc;
+}
+
+h1, h2, h3 {
+  color: #eee;
+}
+
+a {
+  color: #4a86e8;
+}
+
+.btn {
+  background-color: #4a86e8;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #365899;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+table img {
+  max-width: 200px;
+  max-height: auto;
+}
+
+img {
+  max-width: 200px;
+  max-height: auto;
+}
+
+/* ESTILOS PARA LAS TABLAS y margenes de las imagenes */
+
+
+/* Novedades*/
+.novedades-header {
+  background-color: #4a86e8;
+  padding: 10px;
+  /*border: 1px solid #ccc;*/
+}
+
+.novedades-header h2 {
+  margin: 0;
+}
+
+.novedades img {
+  border: 3px solid #4a86e8;
+}
+
+/* Mas vendidos: masven-header */
+.masven-header {
+  background-color: #F6C13D;
+  padding: 10px; 
+}
+
+.masven-header h2 {
+  margin: 0;
+}
+
+.mas-ven img {
+  border: 3px solid #F6C13D;
+}
+/* Descuentos*/
+.discounts-header {
+  background-color: #EB8A40;
+  padding: 10px;
+  /*border: 1px solid #ccc;*/
+}
+
+.discounts-header h2 {
+  margin: 0;
+}
+
+.descuentos img {
+  border: 3px solid #EB8A40;
+}
+
+
+
+
+
+/* genero  */
+.genero-header {
+  background-color: #EB514C;
+  padding: 10px; 
+}
+
+.genero-header h2 {
+  margin: 0;
+}
+
+.genero img {
+  border: 3px solid #EB514C;
+}
+
