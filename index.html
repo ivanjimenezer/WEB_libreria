@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/dist/css/carousel.css" rel="stylesheet" />
+    <link href="../assets/dist/css/colores.css" rel="stylesheet" />
+    <style>
+      body {
+        min-height: 75rem;
+        padding-top: 4.5rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav
+      class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark"
+      aria-label="Third navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Libreria el Mundo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample03"
+          aria-controls="navbarsExample03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <form class="me-auto mb-2 mb-sm-0">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Libro, Autor"
+              aria-label="Search"
+            />
+          </form>
+          <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="dropdown03"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Carrito</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="#">Producto 1</a></li>
+                <li><a class="dropdown-item" href="#">Producto 1</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Producto 1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="active nav-link" aria-current="page" href="#"
+                >Ingresar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="active nav-link" aria-current="page" href="#"
+                >Registrarse</a
+              >
+            </li>
+          </ul>
+           <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <a class="navbar-brand text-white" href="#">Libreria el Mundo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <form class="me-auto  bg-dark">
+            <input
+              type="search"
+              class="form-control form-control-dark"
+              placeholder="Libro, Autor"
+              aria-label="Search"
+            />
+          </form>
+
+          <a class="nav-item nav-link dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              id="dropdown03"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Carrito</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">P1</a></li>
+              <li><a class="dropdown-item" href="#">P2</a></li>
+              <li><a class="dropdown-item" href="#">P3</a></li>
+              <li><a class="dropdown-item" href="#">P4</a></li>
+            </ul>
+          </a>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Registrarse
+            </button>
+            <button type="button" class="btn btn-warning">Ingresar</button>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <!------------------------------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top color-cuarto">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Linea De Fuego</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="me-auto"></ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-5"
+              type="search"
+              placeholder="Libro, Autor"
+              aria-label="Search"
+            />
+
+            <ul class="navbar-nav mb-5 mb-sm-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown03"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Carrito</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                  <li><a class="dropdown-item" href="#">P1</a></li>
+                  <li><a class="dropdown-item" href="#">P2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">P3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-outline-light me-3">
+              Registrarse
+            </button>
+            <button type="button" class="btn color-secundario">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------------------------------------------------------------------->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light rounded"
+      aria-label="Twelfth navbar example"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-md-center"
+          id="navbarsExample10"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Comic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Manga</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------CARUSEL--------------------------------- -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#F6E1C3" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start color-principal">
+              <h1>Checa Nuestras Ofertas!!</h1>
+              <p class="">Vienen por temporadas y por tiempo limitado.</p>
+              <p>
+                <a class="btn btn-lg color-secundario" href="#"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#F6E1C3" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start color-principal">
+              <h1>Crea Tu Cuenta</h1>
+              <p class="">
+                Es facil y rapido, para que comienzas a leer desde hoy
+              </p>
+              <p>
+                <a class="btn btn-lg color-secundario" href="#"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#F6E1C3" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start color-principal">
+              <h1>Aumenta Tu Coleccion!!</h1>
+              <p class="">
+                Con lo mas nuevo y mas entretenido de nuestros producto.
+              </p>
+              <p>
+                <a class="btn btn-lg color-secundario" href="#"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div class="container md-6">
+      <div class="row align-items-start"></div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          laudantium ipsa molestiae, aut totam minus dolore, expedita soluta ut
+          excepturi officiis? Repudiandae, numquam ducimus eum odit officiis est
+          officia molestias!
+        </div>
+      </div>
+      <div class="row align-items-end"></div>
+    </div> -->
+
+    <main class="container">
+      <div class="bg-light p-5 rounded">
+        <h3>Los más leídos</h3>
+      </div>
+    </main>
+
+    <!--------------------CARUSEL Lista mas vendidso--------------------------------- -->
+<!-- 
+    <div
+      id="myCarouselMasLeidos"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarouselMasLeidos"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarouselMasLeidos"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarouselMasLeidos"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="200%" height="150%" fill="#FFFF" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#FFFF" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start color-principal">
+              <h1>Crea Tu Cuenta</h1>
+              <p class="">
+                Es facil y rapido, para que comienzas a leer desde hoy
+              </p>
+              <p>
+                <a class="btn btn-lg color-secundario" href="#"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#F6E1C3" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start color-principal">
+              <h1>Aumenta Tu Coleccion!!</h1>
+              <p class="">
+                Con lo mas nuevo y mas entretenido de nuestros producto.
+              </p>
+              <p>
+                <a class="btn btn-lg color-secundario" href="#"
+                  >Sign up today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarouselMasLeidos"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon color-cuarto"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarouselMasLeidos"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon color-cuarto"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+
+    <div class="container">
+      <div class="mt-5 row ">
+        <div class="col-md-3 ">
+          <div class="card mb-4 color-principal" style="width: 16rem;">
+            <img src="../assets/dist/img/1984.jpg" style="width: 16rem; height: 20rem;" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">1984</h4>
+              <h6 class="card-title mb-3">Precio: $100</h6>
+              <h6 class="card-title mb-3">Autor: George Orwell</h6>
+              <button class="btn color-secundario w-100">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card mb-4 color-principal" style="width: 16rem;" >
+            <img src="../assets/dist/img/caidaCartago.jpg" style="width: 16rem; height: 20rem;" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">La Caída De Cartago</h4>
+              <h6 class="card-title mb-3">Precio: $300</h6>
+              <h6 class=" mb-3">Autor: Adrian Keith </h6>
+              <button class="btn color-secundario w-100">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card mb-4 color-principal" style="width: 16rem;" >
+            <img src="..\assets\dist\img\rebelionEnLaGranja.jpg" style="width: 16rem; height: 20rem;" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Rebelión en la granja</h5>
+              <h6 class="card-title mb-3">Precio: $400</h6>
+              <h6 class=" mb-3">Autor: George Orwell </h6>
+              <button class="btn color-secundario w-100">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card mb-4 color-principal" style="width: 16rem;" >
+            <img src="..\assets\dist\img\metro2033.jpg" style="width: 16rem; height: 20rem;" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Metro 2033</h5>
+              <h6 class="card-title mb-3">Precio: $400</h6>
+              <h6 class=" mb-3">Autor: Dmitry Glukhovsky </h6>
+              <button class="btn color-secundario w-100">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- 
+const recetaContenedor = document.createElement("DIV");
+recetaContenedor.classList.add("col-md-4");
+
+const recetaCard = document.createElement("DIV");
+recetaCard.classList.add("card", "mb-4");
+
+const recetaImagen = document.createElement("IMG");
+recetaImagen.classList.add("card-img-top");
+recetaImagen.alt = `Imagen de la receta ${strMeal ?? receta.titulo}`;
+recetaImagen.src = strMealThumb ?? receta.img;
+
+const recetaCardBody = document.createElement("DIV");
+recetaCardBody.classList.add("card-body");
+
+const recetaHeading = document.createElement("H3");
+recetaHeading.classList.add("card-title", "mb-3");
+recetaHeading.textContent = strMeal ?? receta.titulo;
+
+const recetaButton = document.createElement("BUTTON");
+recetaButton.classList.add("btn", "btn-danger", "w-100");
+recetaButton.textContent = "Ver receta"; -->
+
+<!-- <a class="nav-item nav-link dropdown ">
+  <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+  <ul class="dropdown-menu" aria-labelledby="dropdown03">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</a> -->
